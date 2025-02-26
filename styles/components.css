@@ -1,4 +1,4 @@
-.link {
+.intlink {
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
     text-decoration: none;
@@ -14,13 +14,13 @@
 }
 
 @media screen and (hover : hover) {
-    .link {
+    .intlink {
         cursor: pointer;
     }
-    .link:hover {
+    .intlink:hover {
         background-color: var(--main-brand-color-light);
     }
-    .link.secondary:hover {
+    .intlink.secondary:hover {
         background-color: transparent;
     }
 }

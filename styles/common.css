@@ -18,11 +18,11 @@
     width: 1px;
 }
 
-a.hide {
+a.intlink {
     display: none;
 }
 @media screen and (width > 768px){ 
-    a.hide{
+    a.intlink{
         display: block;
     }
     .material-symbols-outlined{
