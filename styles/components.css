@@ -1,0 +1,42 @@
+.link {
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    text-decoration: none;
+    padding: 0.7rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid var(--main-brand-color);
+    transition: background-color 0.3s;
+    &.secondary {
+        background-color: transparent;
+        border: 1px solid var(--main-text-color);
+    }
+}
+
+@media screen and (hover : hover) {
+    .link {
+        cursor: pointer;
+    }
+    .link:hover {
+        background-color: var(--main-brand-color-light);
+    }
+    .link.secondary:hover {
+        background-color: transparent;
+    }
+}
+
+
+/* texts*/ 
+
+.heading-1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.heading-2{
+    font-weight: 700;
+}   
+
+
+
+

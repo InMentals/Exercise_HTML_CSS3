@@ -1,0 +1,31 @@
+:root {
+    --bg-color: white;
+    --main-text-color: black;
+    --main-brand-color: #e50914;
+    --main-brand-color-light: #ff9ca1;
+    --border-color: #4b5563;
+    --input-bg-color: #333;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.sr-only:not(:focus):not(:active) { 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+a.hide {
+    display: none;
+}
+@media screen and (width > 768px){ 
+    a.hide{
+        display: block;
+    }
+    .material-symbols-outlined{
+        display: none;
+    }
+}
