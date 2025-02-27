@@ -1,0 +1,102 @@
+.skills {
+    padding: 2rem;
+    h3 {
+        margin-bottom: 0;
+    }
+}
+
+.skillBorder {
+    height: 20px;
+    background-color: white ;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    position: center;
+}
+
+.skill {
+    height: 16px;
+    background-color: red;
+    border-radius: 15px;
+    /* border: 2px solid white; */
+    margin: 2px;
+}
+.carisma{
+    animation: carisma 2s linear;
+    animation-fill-mode: forwards;
+}
+.liderazgo{
+    animation: liderazgo 2s linear;
+    animation-fill-mode: forwards;
+}
+
+.fuerza{
+    animation: fuerza 2s linear;
+    animation-fill-mode: forwards;
+}
+.velocidad{
+    animation: velocidad 2s linear;
+    animation-fill-mode: forwards;
+}
+.honor{
+    animation: honor 2s linear;
+    animation-fill-mode: forwards;
+}
+.oratoria{
+    animation: oratoria 2s linear;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    @keyframes carisma {
+        0%{
+          width: 0%;
+        }
+        100%{
+          width: 100%;
+        } 
+      }
+
+      @keyframes liderazgo {
+        0%{
+          width: 0;
+        }
+        100%{
+          width: 80%;
+        }  
+      }
+      @keyframes fuerza {
+        0%{
+          width: 0;
+        }
+        100%{
+          width: 20%;
+        }  
+      }
+      @keyframes velocidad {
+        0%{
+          width: 0;
+        }
+        100%{
+          width: 5%;
+        }  
+      }
+      @keyframes honor {
+        0%{
+          width: 0;
+        }
+        100%{
+          width: 100%;
+        }  
+      }
+      @keyframes oratoria {
+        0%{
+          width: 0;
+        }
+        100%{
+          width: 65%;
+        }  
+      }
+    
+}

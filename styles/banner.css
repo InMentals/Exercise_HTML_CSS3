@@ -1,0 +1,55 @@
+.banner {
+    text-align: center;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+
+    p {
+        font-weight: bold;
+    }
+}
+
+.bannerimg{
+    background-color: var(--bg-color);
+    background-image: url('../images/cartagena1.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+@media screen and (width > 768px){
+    div.bannerimg{
+        background-color: var(--bg-color);
+        background-image: url('../images/cartagena2.png');
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+    
+}
+@media screen and (width > 1034px){
+    div.bannerimg{
+        background-color: var(--bg-color);
+        background-image: url('../images/cartagena3.png');
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+    
+}
