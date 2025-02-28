@@ -74,24 +74,24 @@
         <form class="contact" id="contact">
             <h2>Contacto</h2>
             <div class="form-element">
-                <label for="nombre">Nombre</label>
+                <label class="label" for="nombre">Nombre</label>
                 <input required name="nombre" name="nombre" id="nombre" placeholder="Pon tu nombre">
             </div>
             <div class="form-element">
-                <label for="apellido">Apellido</label>
+                <label class="label" for="apellido">Apellido</label>
                 <input required name="apellido" name="apellido" id="apellido" placeholder="Pon tu apellido">
             </div>
             <div class="form-element">
-                <label for="telefono">Teléfono</label>
+                <label class="label" for="telefono">Teléfono</label>
                 <input required type="tel" name="telefono" id="telefono" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 title="Expected format 123-123-1234" placeholder="Número de  teléfono">
             </div>
             <div class="form-element">
-                <label for="github">Github username</label>
+                <label class="label" for="github">Github username</label>
                 <input required type="^@[^\s]+" name="github" id="github" placeholder="Con este formato  (@<username)">
             </div>
             <fieldset class="radio">  
-                <legend>¿Cómo me conociste?</legend>
+                <legend class="label">¿Cómo me conociste?</legend>
                 <div>
                     <label for="uni">Universidad</label>
                     <input required type="radio" name="conocer" id="uni" value="uni" checked>
@@ -110,7 +110,7 @@
                 </div>
             </fieldset>
             <div class="form-element">
-                <label for="info">Más información</label>
+                <label class="label" for="info">Más información</label>
                 <textarea required name="info" id="info" rows="6" placeholder="Qué más quieres saber" maxlength="180"></textarea>
             </div>
             <div class="form-element row">

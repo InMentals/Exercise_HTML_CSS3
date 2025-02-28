@@ -4,11 +4,41 @@
 }
 
 .radio {
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0 ;
+    div, legend {
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+.label{
+    font-weight: 700;
+}
+
+.form-element {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    div, legend {
-        margin-bottom: 0.5rem;
+    label {
+        margin-bottom: 0.5rem ;
+    }
+    input, textarea, select {
+        border: 1px solid grey;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: var(--input-bg-color);
+        color: var(--main-text-color);
+    }
+    &.row {
+        flex-direction: row;
+        gap: 10px;
+        label {
+            margin: 0;
+        }
     }
 
 }
