@@ -1,4 +1,4 @@
-.intlink {
+.intlink, .btn{
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
     text-decoration: none;
@@ -38,5 +38,27 @@
 }   
 
 
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+        margin-bottom: 0.5rem ;
+    }
+    input, textarea, select {
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: var(--input-bg-color);
+        color: var(--main-text-color);
+    }
+    &.row {
+        flex-direction: row;
+        gap: 10px;
+        label {
+            margin: 0;
+        }
+    }
+}
 
 

@@ -1,0 +1,11 @@
+.contact {
+    padding: 2rem;
+
+}
+
+.radio {
+
+    display: flex;
+    flex-direction: column;
+    
+}
