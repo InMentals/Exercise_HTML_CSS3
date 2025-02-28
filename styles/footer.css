@@ -7,8 +7,8 @@
 
  .instagram {
     content: " ";
-    width: 11px;
-    height: 11px;
+    width: 25px;
+    height: 25px;
     margin-left: 4px;
     background-image: url(../images/instagram.png);
     background-position: center;
@@ -18,8 +18,8 @@
 }
 .youtube {
     content: " ";
-    width: 11px;
-    height: 11px;
+    width: 25px;
+    height: 25px;
     margin-left: 4px;
     background-image: url(../images/youtube.png);
     background-position: center;
@@ -29,8 +29,8 @@
 }
 .x {
     content: " ";
-    width: 11px;
-    height: 11px;
+    width: 25px;
+    height: 25px;
     margin-left: 4px;
     background-image: url(../images/twitter.png);
     background-position: center;

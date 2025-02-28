@@ -9,6 +9,12 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+*{
+    box-sizing: border-box;
+}
+
+
 .sr-only:not(:focus):not(:active) { 
     clip-path: inset(50%);
     height: 1px;
