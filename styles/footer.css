@@ -1,0 +1,40 @@
+.footer{
+    text-align: center;
+    font-weight: 100;
+    font-style: italic;
+    padding: 2em 0;
+}
+
+ .instagram {
+    content: " ";
+    width: 11px;
+    height: 11px;
+    margin-left: 4px;
+    background-image: url(../images/instagram.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.youtube {
+    content: " ";
+    width: 11px;
+    height: 11px;
+    margin-left: 4px;
+    background-image: url(../images/youtube.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+.x {
+    content: " ";
+    width: 11px;
+    height: 11px;
+    margin-left: 4px;
+    background-image: url(../images/twitter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
