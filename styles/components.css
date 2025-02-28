@@ -23,6 +23,16 @@
     .intlink.secondary:hover {
         background-color: transparent;
     }
+    
+    .btn {
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: var(--main-brand-color-light);
+    }
+    .btn.secondary:hover {
+        background-color: transparent;
+    }
 }
 
 
