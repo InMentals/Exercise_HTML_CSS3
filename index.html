@@ -71,9 +71,54 @@
         </section>
         <section class="contact" id="contact">
             <h2>Contacto</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odio repudiandae totam ad delectus voluptate laborum sed, amet autem ipsum non nemo beatae neque, perspiciatis mollitia natus maiores unde recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eligendi enim placeat natus! Impedit dolor, ducimus accusamus maiores nisi iste consequatur distinctio, quae vero nemo, architecto id quidem fugiat? Corporis.
-            </p>
+            <div class="form-element">
+                <label for="nombre">Nombre</label>
+                <input required name="nombre" name="nombre" id="nombre" placeholder="Pon tu nombre">
+            </div>
+            <div class="form-element">
+                <label for="apellido">Apellido</label>
+                <input required name="apellido" name="apellido" id="apellido" placeholder="Pon tu apellido">
+            </div>
+            <div class="form-element">
+                <label for="telefono">Teléfono</label>
+                <input required type="tel" name="telefono" id="telefono" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="Expected format 123-123-1234" placeholder="Número de  teléfono">
+            </div>
+            <div class="form-element">
+                <label for="github">Github username</label>
+                <input required type="^@[^\s]+" name="github" id="github" placeholder="Con este formato  (@<username)">
+            </div>
+            <div class="radio">  
+                <legend>¿Cómo me conociste?</legend>
+                <label for="uni">Universidad</label>
+                <input required type="radio" name="conocer" id="uni" value="uni" checked>
+
+                <label for="keepcoding">Keepcoding kick-off</label>
+                <input required type="radio" name="conocer" id="keepcoding" value="keepcoding">
+
+                <label for="colegio">Colegio</label>
+                <input required type="radio" name="conocer" id="colegio" value="colegio">
+
+                <label for="gith">Github</label>
+                <input required type="radio" name="conocer" id="gith" value="gith">
+            </div>
+            <div class="form-element">
+                <label for="info">Más información</label>
+                <textarea required name="info" id="info" rows="6" placeholder="Qué másquieres saber" maxlength="180"></textarea>
+            </div>
+            <div class="form-element row">
+                <label for="newsletter">Quiero acceso a la newsletter</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+            </div>
+            <div>
+                <button class="btn" type="submit">
+                    Enviar
+                </button>     
+                <input class="btn secondary" type="reset" value="Reset">      
+            </div>
+
+
+            
         </section>
     </main>
     <footer>
