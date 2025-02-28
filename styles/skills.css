@@ -17,10 +17,12 @@
 
   li {
     width: 100%;
-    max-width: 345px;
+    max-width: 300px;
     margin: 0 0.5rem 1rem 0.5rem ;
   }
 }
+
+
 
 .skillBorder {
   height: 20px;
