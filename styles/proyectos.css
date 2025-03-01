@@ -1,10 +1,33 @@
+main{
+    width: 90%; 
+    margin: 0 auto;
+    max-width: 768px;
+ }
+
 .video {
-    padding: 2rem;
+    padding: 2rem; 
     display: flex;
     justify-content: center;
     iframe {
-        max-width: 450px;
+        max-width: 361px;
         width: 100%;
         aspect-ratio: 16 / 9;
     }
+}
+
+
+figure {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    img {
+        width: 100%;
+    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
 }
