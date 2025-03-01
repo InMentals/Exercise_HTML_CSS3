@@ -84,61 +84,59 @@
             <div class="bannerimg"></div>
             <p>El mediohombre terror de los ingleses</p>
         </section>
-        <form class="contact" id="contact">
-            <h2>Contacto</h2>
-            <div class="form-element">
-                <label class="label" for="nombre">Nombre</label>
-                <input required name="nombre" name="nombre" id="nombre" placeholder="Pon tu nombre">
-            </div>
-            <div class="form-element">
-                <label class="label" for="apellido">Apellido</label>
-                <input required name="apellido" name="apellido" id="apellido" placeholder="Pon tu apellido">
-            </div>
-            <div class="form-element">
-                <label class="label" for="telefono">Teléfono</label>
-                <input required type="tel" name="telefono" id="telefono" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                title="Expected format 123-123-1234" placeholder="Número de  teléfono">
-            </div>
-            <div class="form-element">
-                <label class="label" for="github">Github username</label>
-                <input required type="^@[^\s]+" name="github" id="github" placeholder="Con este formato  (@<username)">
-            </div>
-            <fieldset class="radio">  
-                <legend class="label">¿Cómo me conociste?</legend>
-                <div>
-                    <label for="uni">Universidad</label>
-                    <input required type="radio" name="conocer" id="uni" value="uni" checked>
+        <section class="contact" id="contact">
+            <form class="form" action="./registro" method="post">
+                <h2 class="form-element heading">Contacto</h2>
+                <div class="form-element">
+                    <label class="label" for="nombre">Nombre</label>
+                    <input required name="nombre" id="nombre" placeholder="Pon tu nombre">
                 </div>
-                <div>
-                    <label for="keepcoding">Keepcoding kick-off</label>
-                    <input required type="radio" name="conocer" id="keepcoding" value="keepcoding">
+                <div class="form-element">
+                    <label class="label" for="apellido">Apellido</label>
+                    <input required name="apellido" id="apellido" placeholder="Pon tu apellido">
                 </div>
-                <div>
-                    <label for="colegio">Colegio</label>
-                    <input required type="radio" name="conocer" id="colegio" value="colegio">
+                <div class="form-element">
+                    <label class="label" for="telefono">Teléfono</label>
+                    <input required type="tel" name="telefono" id="telefono" autocomplete="off" pattern="[0-9]{9}" title="Formato 123456789" placeholder="Número de  teléfono">
                 </div>
-                <div>
-                    <label for="gith">Github</label>
-                    <input required type="radio" name="conocer" id="gith" value="gith">
+                <div class="form-element">
+                    <label class="label" for="github">Github username</label>
+                    <input pattern="^@[^\s]+" name="github" id="github" placeholder="Con este formato  (@<username)">
                 </div>
-            </fieldset>
-            <div class="form-element">
-                <label class="label" for="info">Más información</label>
-                <textarea required name="info" id="info" rows="6" placeholder="Qué más quieres saber" maxlength="180"></textarea>
-            </div>
-            <div class="form-element row">
-                <input type="checkbox" name="newsletter" id="newsletter">
-                <label for="newsletter">Quiero acceso a la newsletter</label>
-            </div>
-            <div>
-                <button class="btn" type="submit">
-                    Enviar
-                </button>     
-                <input class="btn secondary" type="reset" value="Reset">      
+                <fieldset class="form-element radio">  
+                    <legend class="label">¿Cómo me conociste?</legend>
+                    <div>
+                        <label for="uni">Universidad</label>
+                        <input required type="radio" name="conocer" id="uni" value="uni">
+                    </div>
+                    <div>
+                        <label for="keepcoding">Keepcoding kick-off</label>
+                        <input required type="radio" name="conocer" id="keepcoding" value="keepcoding">
+                    </div>
+                    <div>
+                        <label for="colegio">Colegio</label>
+                        <input required type="radio" name="conocer" id="colegio" value="colegio">
+                    </div>
+                    <div>
+                        <label for="gith">Github</label>
+                        <input required type="radio" name="conocer" id="gith" value="gith">
+                    </div>
+                </fieldset>
+                <div class="form-element moreinfo">
+                    <label class="label" for="info">Más información</label>
+                    <textarea required name="info" id="info" rows="6" placeholder="Qué más quieres saber" maxlength="180"></textarea>
+                </div>
+                <div class="form-element check">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Quiero acceso a la newsletter</label>
+                </div>
+                <div class="form-element btns">
+                    <button class="btn" type="submit">
+                        Enviar
+                    </button>     
+                    <input class="btn secondary" type="reset" value="Reset">  
+                </div>    
             </form>
-
-
-            
         </section>
     </main>
     <footer class="footer">

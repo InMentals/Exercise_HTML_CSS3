@@ -5,6 +5,8 @@
 }
 
 .radio {
+    max-width: 704px;
+    width: 100%;    
     border: 1px solid grey;
     border-radius: 5px;
     display: flex;
@@ -20,10 +22,19 @@
     font-weight: 700;
 }
 
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 1rem;
+}
+
 .form-element {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    max-width: 704px;
+    width: 100%;
+    margin: 0 0 1rem 0 ;
     label {
         margin-bottom: 0.5rem ;
     }
@@ -34,12 +45,51 @@
         background-color: var(--input-bg-color);
         color: var(--main-text-color);
     }
-    &.row {
+    &.check {
         flex-direction: row;
-        gap: 10px;
-        label {
+        gap: 5px;
+        label{
+            margin: 0;
+        }
+    }
+    &.btns {
+        flex-direction: row;
+        gap: 5px;
+        label{
             margin: 0;
         }
     }
 
+
 }
+
+.btn{
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    text-decoration: none;
+    padding: 0.7rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid var(--main-brand-color);
+    transition: background-color 0.3s;
+    &.secondary {
+        background-color: transparent;
+        border: 1px solid var(--main-text-color);
+    }
+}
+
+
+@media screen and (width > 768px) {
+    .form-element, &.radio, &.moreinfo, &.check, &.btns, &.heading {
+        max-width: 472px;
+        width: 100%;
+    }   
+}
+
+  @media screen and (width > 1024px) {
+    .radio, .moreinfo, .check, .btns,  .heading {
+        max-width: 961px;
+        width: 100%;
+    }
+}
+

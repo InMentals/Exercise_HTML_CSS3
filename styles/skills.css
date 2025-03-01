@@ -11,16 +11,28 @@
 .myskills {
   list-style: none;
   padding: 0;
+  margin:  0 0 1rem 0 ;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
+  gap: 0 1rem ;
+  justify-content: space-evenly;
   li {
     width: 100%;
-    max-width: 300px;
-    margin: 0 0.5rem 1rem 0.5rem ;
+    max-width: 450px;
+    margin-bottom: 1rem;
   }
 }
+
+@media screen and (width > 768px) {
+  .myskills {
+    li {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  
+}
+
 
 
 

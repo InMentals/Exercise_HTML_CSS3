@@ -1,4 +1,4 @@
-.intlink, .btn{
+.intlink{
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
     text-decoration: none;
@@ -7,10 +7,6 @@
     border-radius: 5px;
     border: 1px solid var(--main-brand-color);
     transition: background-color 0.3s;
-    &.secondary {
-        background-color: transparent;
-        border: 1px solid var(--main-text-color);
-    }
 }
 
 @media screen and (hover : hover) {
