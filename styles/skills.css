@@ -17,8 +17,8 @@
   gap: 0 1rem ;
   justify-content: space-evenly;
   li {
+    max-width: 420px;
     width: 100%;
-    max-width: 450px;
     margin-bottom: 1rem;
   }
 }
@@ -32,9 +32,6 @@
   }
   
 }
-
-
-
 
 .skillBorder {
   height: 20px;

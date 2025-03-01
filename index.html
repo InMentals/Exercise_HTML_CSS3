@@ -88,23 +88,23 @@
             <form class="form" action="./registro" method="post">
                 <h2 class="form-element heading">Contacto</h2>
                 <div class="form-element">
-                    <label class="label" for="nombre">Nombre</label>
+                    <label for="nombre">Nombre</label>
                     <input required name="nombre" id="nombre" placeholder="Pon tu nombre">
                 </div>
                 <div class="form-element">
-                    <label class="label" for="apellido">Apellido</label>
+                    <label for="apellido">Apellido</label>
                     <input required name="apellido" id="apellido" placeholder="Pon tu apellido">
                 </div>
                 <div class="form-element">
-                    <label class="label" for="telefono">Teléfono</label>
+                    <label for="telefono">Teléfono</label>
                     <input required type="tel" name="telefono" id="telefono" autocomplete="off" pattern="[0-9]{9}" title="Formato 123456789" placeholder="Número de  teléfono">
                 </div>
                 <div class="form-element">
-                    <label class="label" for="github">Github username</label>
+                    <label for="github">Github username</label>
                     <input pattern="^@[^\s]+" name="github" id="github" placeholder="Con este formato  (@<username)">
                 </div>
                 <fieldset class="form-element radio">  
-                    <legend class="label">¿Cómo me conociste?</legend>
+                    <legend>¿Cómo me conociste?</legend>
                     <div>
                         <label for="uni">Universidad</label>
                         <input required type="radio" name="conocer" id="uni" value="uni">
@@ -123,7 +123,7 @@
                     </div>
                 </fieldset>
                 <div class="form-element moreinfo">
-                    <label class="label" for="info">Más información</label>
+                    <label for="info">Más información</label>
                     <textarea required name="info" id="info" rows="6" placeholder="Qué más quieres saber" maxlength="180"></textarea>
                 </div>
                 <div class="form-element check">

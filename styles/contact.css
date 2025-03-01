@@ -4,24 +4,6 @@
     padding: 2rem;
 }
 
-.radio {
-    max-width: 704px;
-    width: 100%;    
-    border: 1px solid grey;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 1rem 0 ;
-    div, legend {
-        margin-bottom: 0.5rem;
-    }
-
-}
-
-.label{
-    font-weight: 700;
-}
-
 .form{
     display: flex;
     flex-wrap: wrap;
@@ -32,36 +14,54 @@
 .form-element {
     display: flex;
     flex-direction: column;
-    max-width: 704px;
+    max-width: 472px;
     width: 100%;
     margin: 0 0 1rem 0 ;
     label {
         margin-bottom: 0.5rem ;
+        font-weight: 700;
     }
-    input, textarea, select {
+
+    input, textarea {
         border: 1px solid grey;
         padding: 1rem;
         border-radius: 5px;
         background-color: var(--input-bg-color);
         color: var(--main-text-color);
     }
+
+    &.radio {    
+        border: 1px solid grey;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;  
+
+        legend {
+            font-weight: 700;
+        }
+        label {
+            font-weight: normal;
+        }
+    }
+
+
     &.check {
         flex-direction: row;
-        gap: 5px;
+        gap: 0.5rem;
         label{
             margin: 0;
+            font-weight: normal;
         }
     }
     &.btns {
         flex-direction: row;
-        gap: 5px;
+        gap: 0.5rem;
         label{
             margin: 0;
         }
     }
-
-
 }
+
 
 .btn{
     color: var(--main-text-color);
@@ -79,17 +79,12 @@
 }
 
 
-@media screen and (width > 768px) {
-    .form-element, &.radio, &.moreinfo, &.check, &.btns, &.heading {
-        max-width: 472px;
-        width: 100%;
-    }   
-}
+  @media screen and (width >= 1024px) {
 
-  @media screen and (width > 1024px) {
-    .radio, .moreinfo, .check, .btns,  .heading {
-        max-width: 961px;
+    .heading, .radio, .moreinfo, .check, .btns{
+        max-width: 1016px;
         width: 100%;
     }
+
 }
 
