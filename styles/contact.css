@@ -49,23 +49,37 @@
             font-weight: normal;
         }
     }
+
 }
 
 
 .btn{
     background-color: var(--main-brand-color);
+    color: var(--secondary-text-color);
     padding: 0.7rem;
     display: inline-block;
     border: 1px solid var(--main-brand-color);
     border-radius: 5px;
     transition: background-color 0.3s;
     &.secondary {
+        color: var(--main-text-color);
         background-color: transparent;
-        border: 1px solid var(--main-text-color);
+        border: 1px solid black;
+    }
+}
+
+@media screen and (width > 1024px) {
+    .heading, .radio, .moreinfo, .check, .btns{
+        max-width: 1016px;
+        width: 100%;
     }
 }
 
 @media screen and (width >= 1024px) {
+    .form-element {
+        max-width: 463px;
+        width: 100%;
+    }
     .heading, .radio, .moreinfo, .check, .btns{
         max-width: 1016px;
         width: 100%;

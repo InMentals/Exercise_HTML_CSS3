@@ -27,7 +27,7 @@
 
 a.intlink {
     text-decoration: none;
-    color: var(--main-text-color);
+    color: var(--secondary-text-color);
     background-color: var(--main-brand-color);
     text-decoration: none;
     padding: 0.7rem;
