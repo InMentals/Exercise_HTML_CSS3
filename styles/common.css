@@ -1,9 +1,9 @@
 :root {
     --bg-color: white;
     --main-text-color: black;
-    --main-brand-color: #e50914;
-    --main-brand-color-light: #ff9ca1;
-    --border-color: #4b5563;
+    --main-brand-color: #d9171a;
+    --main-brand-color-light: #D98B8C;
+    --border-color: grey;
     --input-bg-color: white;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,6 @@
     box-sizing: border-box;
 }
 
-
 .sr-only:not(:focus):not(:active) { 
     clip-path: inset(50%);
     height: 1px;
@@ -24,19 +23,8 @@
     width: 1px;
 }
 
-a.intlink {
-    display: none;
-}
-@media screen and (width > 768px){ 
-    a.intlink{
-        display: block;
-    }
-    .material-symbols-outlined{
-        display: none;
-    }
-}
 
-h1, h2, h3, h4 ,p {
+h1, h2, h3 {
     margin-top: 0;
 }
 
@@ -45,7 +33,9 @@ p{
     margin-bottom: 2rem;
 }
 
-
 section {
     scroll-margin-top: 150px; 
   }
+
+
+

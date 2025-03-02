@@ -7,7 +7,6 @@
   }
 
 }
-
 .myskills {
   list-style: none;
   padding: 0;
@@ -16,7 +15,7 @@
   flex-wrap: wrap;
   gap: 0 1rem ;
   justify-content: space-evenly;
-  li {
+  .skill {
     max-width: 420px;
     width: 100%;
     margin-bottom: 1rem;
@@ -25,7 +24,7 @@
 
 @media screen and (width > 768px) {
   .myskills {
-    li {
+    .skill {
       max-width: 300px;
       width: 100%;
     }
@@ -41,7 +40,7 @@
   padding: 2px;
 }
 
-.skill {
+.carisma, .liderazgo,.fuerza,.velocidad,.honor,.oratoria {
     height: 12px;
     background-color: red;
     border-radius: 15px;

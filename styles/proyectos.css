@@ -12,14 +12,14 @@ section {
         width: 100%;
         aspect-ratio: 16 / 9;
         padding: 2rem;
-    }
-
+        
         opacity: 1;
         animation-name: fadeInOpacity;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
         animation-duration: 3s;
-    
+
+    }  
 }
 @keyframes fadeInOpacity {
 	0% {
@@ -29,6 +29,8 @@ section {
 		opacity: 1;
 	}
 }
+
+
 
 figure {
     margin: 0;
@@ -40,6 +42,7 @@ figure {
     padding: 0;
     img {
         width: 100%;
+        border-radius: 10%;
     }
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));

@@ -55,7 +55,7 @@
     }
     &.btns {
         flex-direction: row;
-        gap: 0.5rem;
+        gap: 10px;
         label{
             margin: 0;
         }
@@ -78,13 +78,22 @@
     }
 }
 
-
-  @media screen and (width >= 1024px) {
-
+@media screen and (width >= 1024px) {
     .heading, .radio, .moreinfo, .check, .btns{
         max-width: 1016px;
         width: 100%;
     }
+}
 
+@media screen and (hover : hover) {
+    .btn {
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: var(--main-brand-color-light);
+    }
+    .btn.secondary:hover {
+        background-color: transparent;
+    }
 }
 
