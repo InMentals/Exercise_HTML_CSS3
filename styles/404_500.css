@@ -1,0 +1,59 @@
+.bannerError {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        padding: 2rem;
+        background-color: var(--bg-color);
+        font-size: 60px;
+        color: var(--main-brand-color);
+        /* border: 5px solid var(--main-brand-color); */
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: Lavishly;
+    }
+    p {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Lavishly;
+    }
+}
+
+.bannerErrorImg{
+    z-index: -1;
+    background-color: var(--bg-color);
+    background-image: url('../images/cartagena1.png');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.btnError {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    background-color: var(--main-brand-color);
+    text-decoration: none;
+    padding: 0.7rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid var(--main-brand-color);
+    transition: background-color 0.3s;
+    
+}
+
+@media screen and (hover : hover) {
+    .btnError{
+        cursor: pointer;
+    }
+    .btnError:hover {
+        background-color: var(--main-brand-color-light);
+    }
+}

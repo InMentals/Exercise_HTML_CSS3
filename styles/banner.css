@@ -9,6 +9,7 @@
         font-size: 40px;
         font-weight: bold;
         font-family: Lavishly;
+        z-index: 50;
     }
 }
 
