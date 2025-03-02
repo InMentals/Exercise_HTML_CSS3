@@ -40,87 +40,40 @@
   padding: 2px;
 }
 
-.carisma, .liderazgo,.fuerza,.velocidad,.honor,.oratoria {
+.bar {
     height: 12px;
     background-color: red;
     border-radius: 15px;
-}
-.carisma{
-    animation: carisma 2s linear;
+    animation: skillanimation 2s linear;
     animation-fill-mode: forwards;
-}
-.liderazgo{
-    animation: liderazgo 2s linear;
-    animation-fill-mode: forwards;
+    .carisma{
+      max-width: 100%;
+    }
+    &.liderazgo{
+        max-width: 80%;
+    }
+    &.fuerza{
+        max-width: 20%;
+    }
+    &.velocidad{
+      max-width: 5%;
+    }
+    &.honor{
+      max-width: 100%;
+    }
+    &.oratoria{
+      max-width: 65%;
+    }
 }
 
-.fuerza{
-    animation: fuerza 2s linear;
-    animation-fill-mode: forwards;
-}
-.velocidad{
-    animation: velocidad 2s linear;
-    animation-fill-mode: forwards;
-}
-.honor{
-    animation: honor 2s linear;
-    animation-fill-mode: forwards;
-}
-.oratoria{
-    animation: oratoria 2s linear;
-    animation-fill-mode: forwards;
-}
 
 @media screen and (prefers-reduced-motion: no-preference) {
-
-    @keyframes carisma {
-        0%{
-          width: 0%;
-        }
-        100%{
-          width: 100%;
-        } 
-      }
-
-      @keyframes liderazgo {
-        0%{
-          width: 0;
-        }
-        100%{
-          width: 80%;
-        }  
-      }
-      @keyframes fuerza {
-        0%{
-          width: 0;
-        }
-        100%{
-          width: 20%;
-        }  
-      }
-      @keyframes velocidad {
-        0%{
-          width: 0;
-        }
-        100%{
-          width: 5%;
-        }  
-      }
-      @keyframes honor {
-        0%{
-          width: 0;
-        }
-        100%{
-          width: 100%;
-        }  
-      }
-      @keyframes oratoria {
-        0%{
-          width: 0;
-        }
-        100%{
-          width: 65%;
-        }  
-      }
-    
+  @keyframes skillanimation {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    } 
+  }
 }
