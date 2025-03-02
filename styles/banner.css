@@ -5,11 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
-
-
     p {
+        font-size: 40px;
         font-weight: bold;
+        font-family: Lavishly;
     }
 }
 
@@ -39,7 +38,7 @@
     }
     
 }
-@media screen and (width > 1034px){
+@media screen and (width > 1024px){
     div.bannerimg{
         background-color: var(--bg-color);
         background-image: url('../images/cartagena3.png');
