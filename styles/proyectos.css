@@ -30,6 +30,7 @@ section {
     margin: 0;
     padding: 0;
     img {
+        padding: 0.5rem;
         width: 100%;
         border-radius: 10%;
     }
@@ -38,6 +39,9 @@ section {
     gap: 20px;
     figure {
         margin: 0;
+    }
+    figcaption {
+        text-align: center;
     }
 }
 
