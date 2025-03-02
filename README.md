@@ -1,7 +1,7 @@
 # Exercise Fundamentos Web: HTML5, CSS3
 
 This repository contains the exercise for the module **Fundamentos Web: HTML5, CSS3**
-of the KeepCoding bootcamp Desarrollo Web | Edición XVIII.
+of the **KeepCoding** bootcamp **Desarrollo Web | Edición XVIII**.
 
 ## Project Details
 - The exercise statement is provided in the file **Fundamentos Web_ HTML5, CSS3.pdf**.
