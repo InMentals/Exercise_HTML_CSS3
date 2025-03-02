@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: 4px solid var(--main-brand-color);
+    border-bottom: 4px solid var(--main-brand-color-light);
     img{
         width: 20%;
         max-width: 200px;

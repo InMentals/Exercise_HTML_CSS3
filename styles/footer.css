@@ -1,41 +1,29 @@
 .footer{
-    text-align: center;
-    font-weight: 100;
-    font-style: italic;
+    display: flex;
+    justify-content: center ;
     padding: 2em 0;
-    background-color: rgb(224, 80, 80);
+    margin:0;
+    background-color: var(--main-brand-color-light);
 }
 
- .instagram {
-    content: " ";
+.extlink{
     width: 25px;
     height: 25px;
     margin-left: 4px;
-    background-image: url(../images/instagram.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+    &.instagram {
+        background-image: url(../images/instagram.png);
+    }
+    &.youtube {
+        background-image: url(../images/youtube.png);
+    }
+    &.twitter {
+        background-image: url(../images/twitter.png);
+    }
 }
-.youtube {
-    content: " ";
-    width: 25px;
-    height: 25px;
-    margin-left: 4px;
-    background-image: url(../images/youtube.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-}
-.x {
-    content: " ";
-    width: 25px;
-    height: 25px;
-    margin-left: 4px;
-    background-image: url(../images/twitter.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-}
+
+
+

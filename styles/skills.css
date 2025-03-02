@@ -42,7 +42,7 @@
 
 .bar {
     height: 12px;
-    background-color: red;
+    background-color: var(--main-brand-color);
     border-radius: 15px;
     animation: skillanimation 2s linear;
     animation-fill-mode: forwards;
